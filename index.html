@@ -14,21 +14,39 @@
 
     <div class="wrapper">
         <div class="container">
-            <div class="toDo__list">
-                <h1> ToDOList </h2>
-                    <input type="text" class="text__mesenge" placeholder="Enter new task">
-                    <button class="add__task">Add</button>
-                    <ul class toDo__list>
-                        <li class="toDo__item">
-                            <span class=""></span>
+            <div class="toDo">
+                <h1> ToDOList </h1>
+                <div class="add__task">
+                    <input type="text" class="text__input" placeholder="Enter new task">
+                    <button class="addTask__button">Add</button>
+                </div>
+                <div class="list__content">
+                    <ul class="toDo__list">
+                        <li class="list__item">
+                            <span class="crossOut__item"> <a href="#" class="tick__item"> </a>
+                                <span class="text__item">Exampssddsle</span> </span>
+                            <a href="#" class="delete__item"> &#x2716 </a>
+                        </li>
+                        <li class="list__item">
+                            <span class="crossOut__item"> <a href="#" class="tick__item"> </a>
+                                <span class="text__item">Exampsdsadle</span> </span>
+                            <a href="#" class="delete__item"> &#x2716 </a>
+                        </li>
+                        <li class="list__item">
+                            <span class="crossOut__item"> <a href="#" class="tick__item"> </a>
+                                <span class="text__item">Exasddasasdassample</span> </span>
+                            <a href="#" class="delete__item"> &#x2716 </a>
                         </li>
                     </ul>
-                    <button class="clear">Clear all</button>
+                </div>
+                <button class="clear__button">Clear all</button>
 
             </div>
 
         </div>
     </div>
+
+
 
     <script src="script.js"></script>
 </body>

@@ -1,0 +1,151 @@
+
+
+*{
+	padding: 0;
+	margin: 0;
+    border: 0;
+	box-sizing: border-box;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	font-family: 'Open Sans';
+}
+/*input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}*/
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul, li{list-style: none; text-decoration: none; }
+img{vertical-align: top;}
+
+::-webkit-input-placeholder {
+	text-align:center;
+	}
+	
+	:-moz-placeholder { /* Firefox 18- */
+	   text-align:center;  
+	}
+	
+	::-moz-placeholder {  /* Firefox 19+ */
+	   text-align:center;  
+	}
+	
+	:-ms-input-placeholder {  
+	   text-align:center; 
+	}
+
+
+
+
+.wrapper {
+
+    
+    width: 100%;
+    height: 100%;
+    padding-top: 100px;
+    background: linear-gradient(180deg, #0f4103 0%, #b6d40c 100%) center no-repeat;
+    }
+
+.container {
+    display: block;
+    max-width: 400px; 
+    margin: 0px auto;
+    background-color:#0f4103;
+    box-shadow: 0 2px 20px 0 ;
+    border-radius: 10px
+}
+.toDo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tickCrossOut__item:hover {
+    
+    
+    color:antiquewhite;
+}
+
+.delete__item{
+    margin-right: 4px;
+    text-align: right;
+    color:antiquewhite;
+
+}
+
+
+.add__task{
+ 
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.add__task{
+    display: flex;
+
+    
+}
+a{
+     color:antiquewhite;
+}
+
+.toDo__list{
+    
+}
+
+.addTask__button , .clear__button{
+
+    
+    padding: 8px;
+    background-color: #0d2505;
+    color: antiquewhite;
+}
+
+.addTask__button:hover,.clear__button:hover{
+
+    background-color: #729769;
+}
+
+.clear__button{
+
+    border-radius: 10px;
+
+}
+
+h1{
+
+    color:antiquewhite;
+    text-align: center;
+}
+
+.text__input{
+    width:350px;
+    margin: 0% auto;
+    background-color: #0d2505;
+    color: antiquewhite;
+}
+
+.text__item,.tick__item{
+    color:antiquewhite;
+}
+
+
