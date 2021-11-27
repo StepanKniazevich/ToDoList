@@ -8,29 +8,30 @@ const allTaskList = document.querySelector(".toDo__list");
 const listContent = document.querySelector(".list__content");
 
 
-/*
-function showTick(event){
+
+function showRemoveTick(condition, event) {
+
+
 }
-*/
 
 
-for (let el of crossOutItem) {
 
-    el.addEventListener("mouseover", (event) => {
+//crossOutItem.forEach(el => {
 
-        console.log(event.target);
-        // event.target.previousElementSibling.innerHTML = "&#x2714";
+allTaskList.addEventListener("mouseover", (event) => {
+    checkElement = ["text__item", "tick__item", "crossOut__item"].includes(event.target.className) ?
+        event.target.previousElementSibling.style.visibility = "visible" : "";
+});
+
+allTaskList.addEventListener("mousemove", (event) => {
+
+    console.log(event.target);
+    checkElement = ["text__item", "tick__item", "crossOut__item"].includes(event.relatedTarget.className) ?
+        event.target.previousElementSibling.style.visibility = "hidden" : "";
+
+});
 
 
-    });
-}
-/*
- 
-allTaskList.addEventListener("mouseout", (event) =>{ 
-    if (event.target.parentElement.className === "crossOut__item"){
-         event.target.previousElementSibling.innerHTML = "&#x2714";   
-}});
-*/
 
 
 
