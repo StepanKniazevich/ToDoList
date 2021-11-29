@@ -5,12 +5,12 @@
 	margin: 0;
     border: 0;
 	box-sizing: border-box;
-}
+}/*
 *,*:before,*:after{
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
-}
+}*/
 :focus,:active{outline: none;}
 a:focus,a:active{outline: none;}
 
@@ -90,7 +90,18 @@ img{vertical-align: top;}
     margin-right: 4px;
     text-align: right;
     color:antiquewhite;
+}
 
+.delete__item::after {
+    
+    content: '\2716';
+  
+}
+
+.check__item {
+ /*
+    -webkit-appearance: none;
+    appearance: none;*/
 }
 
 
@@ -112,7 +123,7 @@ a{
     
 }
 
-.addTask__button , .clear__button{
+.addTask__button , .clear__button,.clearChecked__button{
 
     
     padding: 8px;
@@ -120,17 +131,22 @@ a{
     color: antiquewhite;
 }
 
-.addTask__button:hover,.clear__button:hover{
+.addTask__button:hover,.clear__button:hover,.clearChecked__button:hover{
 
     background-color: #729769;
 }
 
-.clear__button{
+.clear__button,.clearChecked__button{
 
     border-radius: 10px;
 
 }
 
+.cleaned__Button{
+    
+    display:flex;
+    margin-top: 10px;
+}
 h1{
 
     color:antiquewhite;
@@ -144,8 +160,11 @@ h1{
     color: antiquewhite;
 }
 
-.text__item,.tick__item{
+.text__item,.check__item{
     color:antiquewhite;
+}
+
+.check__item {
 }
 
 
