@@ -22,7 +22,6 @@ html,body{
 	-webkit-text-size-adjust: 100%;
 	font-family: 'Open Sans';
 }
-/*input,button,textarea{font-family:inherit;}
 
 input::-ms-clear{display: none;}*/
 button{cursor: pointer;}
@@ -40,10 +39,7 @@ img{vertical-align: top;}
 	   text-align:center;  
 	}
 	
-	::-moz-placeholder { 
-	   text-align:center;  
-	}
-	
+
 	:-ms-input-placeholder {  
 	   text-align:center; 
 	}
@@ -76,8 +72,7 @@ img{vertical-align: top;}
 }
 
 .tickCrossOut__item:hover {
-    
-    
+
     color:antiquewhite;
 }
 
@@ -92,6 +87,9 @@ img{vertical-align: top;}
     content: '\2716';
   
 }
+
+
+
 
 
 
@@ -141,16 +139,31 @@ h1{
     text-align: center;
 }
 
-.text__input{
+#text__input{
     width:350px;
     margin: 0% auto;
     background-color: #0d2505;
     color: antiquewhite;
+    caret-color:#0d2505;
 }
 
 .text__item,.check__item{
     color:antiquewhite;
 }
+
+
+
+#text__input:invalid {
+    border: 2px  #0d2505;
+  }
+  
+  #text__input:invalid:required {
+    background-image: linear-gradient(to right, #82f562, rgb(9, 129, 9));
+  }
+  
+  #text__input:valid {
+    border: 2px solid #0d2505;
+  }
 
 
 
