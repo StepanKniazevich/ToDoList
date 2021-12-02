@@ -1,7 +1,6 @@
 const addTask = document.querySelector(".addTask__button");
 const crossOutItem = document.querySelectorAll(".crossOut__item")
 const deleteTasks = document.querySelectorAll(".delete__item");
-const inputTaks = document.querySelector(".text__input");
 const checkItems = document.getElementsByClassName("check__item");
 const textTask = document.querySelector(".text__item");
 const allTaskList = document.querySelector(".toDo__list");
